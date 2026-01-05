@@ -1,0 +1,17 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.p-entry {
+  & {
+    
+  }
+}
+
+.mw_wp_form.mw_wp_form_complete {
+  margin: 8rem 0;
+
+  @include sp {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,88 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.l-footer {
+  & {
+    background-color: $base-font-color;
+
+    &__cont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 0;
+
+      @include sp {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3.2rem;
+      }
+    }
+
+    &__blk {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4rem;
+
+      @include sp {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.6rem;
+      }
+    }
+
+    &__logo {
+      display: inline-block;
+      width: 30rem;
+
+      @include sp {
+        width: 22.5rem;
+      }
+    }
+
+    &__logo-img {
+      width: 100%;
+    }
+
+    &__link {
+      color: $base-bg-color;
+      font-size: 1.5rem;
+      line-height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .8rem;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 1.5rem;
+        height: 1.4rem;
+        background-image: url(../img/common/icon_link.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include sp {
+          width: 1.4rem;
+          height: 1.3rem;
+        }
+      }
+    }
+
+    &__small {
+      color: $base-bg-color;
+      font-size: 1.2rem;
+      font-weight: $base-font-medium;
+      line-height: 100%;
+
+      @include sp {
+        font-size: 1rem;
+      }
+    }
+  }
+}

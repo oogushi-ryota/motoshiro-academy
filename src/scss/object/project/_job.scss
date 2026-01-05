@@ -1,0 +1,152 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.p-job {
+  & {
+    padding: 38rem 0 26rem;
+
+    @include sp {
+      padding: 22rem 0 11.5rem;
+    }
+
+    &::after {
+      content: "";
+      width: 33rem;
+      height: 34.2rem;
+      background-image: url(../img/job/job_obj03.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: 8rem;
+      z-index: 3;
+
+      @include sp {
+        width: 12.1rem;
+        height: 12.6rem;
+        top: 9rem;
+        right: -1rem;
+      }
+    }
+
+    &__txtblk {
+      top: -14rem;
+    }
+
+    &__cont {
+      position: relative;
+      z-index: 2;
+
+      &::before,
+      &::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+      }
+
+      &::before {
+        width: 57.9rem;
+        height: 38.9rem;
+        background-image: url(../img/job/job_obj01.svg);
+        top: -27rem;
+        left: -13rem;
+        z-index: 0;
+
+        @include sp {
+          width: 21.2rem;
+          height: 22.7rem;
+          background-image: url(../img/job/job_obj01-sp.svg);
+          top: -14rem;
+          left: -4rem;
+        }
+      }
+
+      &::after {
+        width: 20.6rem;
+        height: 17.5rem;
+        background-image: url(../img/job/job_obj02.svg);
+        bottom: -5.1rem;
+        right: -12.4rem;
+        z-index: 0;
+
+        @include sp {
+          width: 13.4rem;
+          height: 11.3rem;
+          bottom: -4.8rem;
+          right: -3.4rem;
+        }
+      }
+    }
+
+    &__table {
+      background-color: $base-bg-color;
+      border: solid 1rem $base-font-color;
+      display: block;
+      width: 100%;
+      padding: 9rem 12.4rem;
+      position: relative;
+      z-index: 2;
+
+      @include sp {
+        padding: 5.6rem 1.4rem;
+        border: solid .6rem $base-font-color;
+      }
+    }
+
+    &__tbody {
+      width: 100%;
+      display: block;
+    }
+
+    &__tr {
+      padding: 3.2rem 0 3.2rem 2.4rem;
+      border-top: solid .3rem $base-font-color;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2.4rem;
+
+      @include sp {
+        padding: 2.4rem 0;
+        display: block;
+        border-top: solid .2rem $base-font-color;
+      }
+
+      &:last-of-type {
+        border-bottom: solid .3rem $base-font-color;
+
+        @include sp {
+          border-top: solid .2rem $base-font-color;
+        }
+      }
+    }
+
+    &__th {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 100%;
+      text-align: left;
+      min-width: 22.4rem;
+
+      @include sp {
+        font-size: 1.6rem;
+        display: block;
+        min-width: unset;
+      }
+    }
+
+    &__td {
+      font-size: 1.8rem;
+      font-weight: $base-font-medium;
+      line-height: 140%;
+
+      @include sp {
+        font-size: 1.6rem;
+        display: block;
+        margin-top: 1.2rem;
+      }
+    }
+  }
+}

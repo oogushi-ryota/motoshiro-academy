@@ -1,0 +1,13 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.p-fv {
+  & {
+    padding-top: 8rem;
+
+    @include sp {
+      padding-top: 5.8rem;
+    }
+  }
+}

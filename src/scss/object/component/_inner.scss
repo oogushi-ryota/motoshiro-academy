@@ -1,0 +1,16 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.c-inner {
+  & {
+    width: 148rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    @include sp {
+      width: 100%;
+      padding: 0 2rem;
+    }
+  }
+}
