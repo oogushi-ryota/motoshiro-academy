@@ -36,9 +36,14 @@ html {
 }
 
 body {
+  color: $base-font-color;
   font-family: $ff-dnp-shuei-ymincho;
   font-weight: $base-font-bold;
   font-style: normal;
   font-optical-sizing: auto;
   background-color: $base-bg-color;
+
+  &.is-active {
+    overflow: hidden;
+  }
 }

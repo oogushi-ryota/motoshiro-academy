@@ -1,0 +1,163 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-course-menu {
+  & {
+    margin-top: 4rem;
+
+    &__inner {
+      max-width: 176.5rem;
+      margin: 0 auto 0 0;
+      padding: 0 2rem 0 0;
+
+      @include sp {
+        padding: 0 2rem;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      @include sp {
+        display: block;
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 5.4rem;
+
+        @include sp {
+          margin-top: 3.2rem;
+        }
+      }
+    }
+
+    &__img {
+      width: 65rem;
+      flex-shrink: 0;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    &__txtblk {
+      max-width: 107.6rem;
+
+      @include sp {
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__ttl {
+      color: color(blu,base);
+      font-size: 3.2rem;
+      line-height: calc(40/32);
+      text-align: center;
+      width: 21.7rem;
+      height: 21.7rem;
+      background-color: rgba($color: color(org,base), $alpha: .8);
+      border-radius: 100vmax;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @include sp {
+        font-size: 2.4rem;
+        width: 16rem;
+        height: 16rem;
+      }
+
+      &::after {
+        content: "";
+        background-color: rgba($color: color(blu,base), $alpha: .8);
+        display: block;
+        width: 21.7rem;
+        height: 21.7rem;
+        border-radius: 100vmax;
+        position: absolute;
+        top: 0;
+        right: -18.3rem;
+        z-index: 1;
+
+        @include sp {
+          width: 16rem;
+          height: 16rem;
+          right: -13rem;
+        }
+      }
+    }
+
+    &__txt {
+      font-size: 2.4rem;
+      font-weight: $base-font-bold;
+      line-height: calc(30/24);
+      letter-spacing: .025em;
+      margin-top: 1.6rem;
+
+      @include sp {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__cont {
+      margin-top: 3.2rem;
+
+      @include sp {
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__cont-ttl {
+      color: color(blu,base);
+      font-size: 2rem;
+      letter-spacing: .025em;
+
+      @include sp {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__cont-list {
+      margin-top: .8rem;
+
+      @include sp {
+        margin-top: .6rem;
+      }
+    }
+
+    &__cont-item {
+      font-size: 2rem;
+      line-height: calc(30/20);
+      letter-spacing: .025em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+
+      &::before {
+        content: "●";
+        color: color(org,base);
+      }
+    }
+
+    &__cont-txt {
+      font-size: 2rem;
+      line-height: calc(30/20);
+      letter-spacing: .025em;
+      margin-top: .8rem;
+
+      @include sp {
+        font-size: 1.4rem;
+        margin-top: .6rem;
+      }
+    }
+  }
+}

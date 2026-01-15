@@ -1,0 +1,31 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-about-school {
+  & {
+    padding-top: 10rem;
+
+    @include sp {
+      padding-top: 5.6rem;
+    }
+
+    &__wrap {
+      max-width: 94rem;
+      margin: 5.6rem auto 0;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 3.4rem;
+
+      @include sp {
+        margin: 4rem auto 0;
+        gap: 1.2rem;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}

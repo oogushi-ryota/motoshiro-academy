@@ -1,0 +1,151 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-column-details {
+  & {
+    padding-top: 8.6rem;
+
+    @include sp {
+      padding-top: 5.6rem;
+    }
+
+    &__thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin-top: 2.4rem;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__cont {
+      margin-top: 4rem;
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: $base-font-bold;
+        margin: 5.6rem 0 1em;
+
+        @include sp {
+          margin: 3.2rem 0 1em;
+        }
+      }
+
+      h1 {
+        font-size: 4rem;
+
+        @include sp {
+          font-size: 2.4rem;
+        }
+      }
+
+      h2 {
+        font-size: 3.2rem;
+
+        @include sp {
+          font-size: 2rem;
+        }
+      }
+
+      h3 {
+        font-size: 2.4rem;
+
+        @include sp {
+          font-size: 1.8rem;
+        }
+      }
+
+      h4 {
+        font-size: 2rem;
+
+        @include sp {
+          font-size: 1.6rem;
+        }
+      }
+
+      p,
+      a,
+      li,
+      blockquote {
+        font-size: 2rem;
+        font-weight: $base-font-regular;
+        line-height: 180%;
+
+        @include sp {
+          font-size: 1.4rem;
+        }
+      }
+
+      p,
+      a,
+      ol,
+      ul {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      p,
+      ol,
+      ul,
+      blockquote {
+        margin: 1em 0;
+      }
+
+      a {
+        text-decoration: underline;
+        text-underline-offset: .2rem;
+      }
+
+      img {
+        width: auto;
+        height: auto;
+        margin: 3.2rem 0;
+
+        @include sp {
+          width: 100%;
+          margin: 2.4rem 0;
+        }
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      ol,
+      ul {
+        padding-left: 2em;
+      }
+
+      ol li {
+        list-style: decimal;
+      }
+
+      ul li {
+        list-style-type: disc;
+      }
+
+      blockquote {
+        padding-left: 1em;
+        border-left: solid 2px color(gry,base);
+      }
+
+      em {
+        font-style: italic;
+      }
+
+      strong {
+        font-weight: $base-font-bold;
+      }
+    }
+  }
+}

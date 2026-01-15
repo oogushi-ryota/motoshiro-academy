@@ -1,0 +1,16 @@
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/color" as *;
+
+.c-top-secttl {
+  & {
+    color: color(blu,base);
+    font-size: 7.2rem;
+    text-align: center;
+
+    @include sp {
+      font-size: 4rem;
+      line-height: 140%;
+    }
+  }
+}

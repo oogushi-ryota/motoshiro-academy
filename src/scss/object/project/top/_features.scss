@@ -1,0 +1,159 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-features {
+  & {
+    padding-top: 12rem;
+
+    @include sp {
+      padding-top: 8rem;
+    }
+
+    &__inner {
+      max-width: 89rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+
+      @include sp {
+        padding: 0;
+      }
+    }
+
+    &__ttl {
+      @include sp {
+        padding: 0 2rem;
+      }
+    }
+
+    &__wrap {
+      @include sp {
+        overflow-x: auto;
+        margin-left: 2rem;
+      }
+    }
+
+    &__table {
+      width: 100%;
+      margin-top: 4rem;
+
+      @include sp {
+        width: 56rem;
+        margin: 3.2rem 2rem 0 0;
+      }
+    }
+
+    &__thead {
+      background-color: color(blu,base);
+      height: 7.2rem;
+    }
+
+    &__thead-th {
+      color: color(wt,base);
+      font-family: $ff-noto-serif;
+      font-size: 3.2rem;
+      letter-spacing: .055em;
+      text-align: center;
+      vertical-align: middle;
+
+      @include sp {
+        font-size: 2rem;
+      }
+
+      &:first-of-type {
+        width: 18.8rem;
+        border-right: solid 1px color(wt,base);
+
+        @include sp {
+          width: 16rem;
+        }
+      }
+
+      &--academy {
+        background-color: color(org,base);
+      }
+    }
+
+    &__tbody-tr {
+      .p-top-features__tbody-th {
+        &:first-of-type {
+          border-top: solid 1px color(wt,base);
+        }
+      }
+
+      &:last-of-type {
+        .p-top-features__tbody-th {
+          border-bottom: solid 1px color(blu,base);
+        }
+      }
+    }
+
+    &__tbody-th {
+      color: color(wt,base);
+      font-family: $ff-noto-serif;
+      font-size: 2rem;
+      line-height: calc(32/20);
+      letter-spacing: .055em;
+      text-align: center;
+      vertical-align: middle;
+      background-color: color(blu,base);
+
+      @include sp {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__tbody-td {
+      background-color: color(wt,base);
+      padding: 2.4rem 0 1.6rem;
+      border: solid 1px color(blu,base);
+    }
+
+    &__img {
+      width: 24.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+
+      @include sp {
+        width: 16rem;
+      }
+    }
+
+    figcaption {
+      color: color(blu,base);
+      font-family: $ff-noto-serif;
+      font-size: 1.6rem;
+      text-align: center;
+      letter-spacing: .055em;
+      line-height: calc(24/16);
+      margin-top: 1.4rem;
+
+      @include sp {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__txt {
+      color: color(wt,base);
+      font-size: 5rem;
+      line-height: calc(65/50);
+      letter-spacing: .05em;
+      background-color: rgba($color: color(org,base), $alpha: .85);
+      border-radius: 100vmax;
+      margin-top: 8rem;
+      padding: 3.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include sp {
+        font-size: 2rem;
+        margin: 4rem 2rem 0;
+        padding: 2.4rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-column-new {
+  & {
+    padding-top: 7.2rem;
+
+    &__pagination {
+      margin-top: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .page-numbers {
+        color: rgba($color: color(blu,base), $alpha: .8);
+        font-size: 4rem;
+        font-weight: $base-font-bold;
+
+        @include sp {
+          font-size: 2.4rem;
+        }
+
+        &::after {
+          content: "│";
+        }
+
+        &.is-current {
+          color: rgba($color: color(blu,base), $alpha: 1);
+        }
+      }
+    }
+  }
+}

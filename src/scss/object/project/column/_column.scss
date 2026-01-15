@@ -1,0 +1,97 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-column {
+  & {
+    overflow: unset;
+
+    @include sp {
+      overflow: hidden;
+    }
+
+    &__inner {
+      max-width: 92rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    &__ttl {
+      color: color(blu,base);
+      font-size: 4rem;
+      font-weight: $base-font-bold;
+      line-height: 140%;
+      letter-spacing: .05em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.4rem;
+
+      @include sp {
+        font-size: 2.4rem;
+        gap: .8rem;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 5.8rem;
+        height: 5rem;
+        background-image: url(../img/common/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-shrink: 0;
+
+        @include sp {
+          width: 4rem;
+          height: 3.5rem;
+        }
+      }
+    }
+
+    &__obj {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 5.1rem;
+        height: calc(100% + var(--footer-height));
+        background-image: url(../img/common/obj.svg);
+        background-repeat: repeat-y;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 17.3rem;
+        z-index: -1;
+
+        @include sp {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 26rem;
+        height: 103rem;
+        background-image: url(../img/column/obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 6rem;
+        right: 14rem;
+
+        @include sp {
+          display: none;
+        }
+      }
+
+      &--single {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

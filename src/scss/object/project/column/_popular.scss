@@ -1,0 +1,13 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-column-popular {
+  & {
+    padding-top: 8.6rem;
+
+    @include sp {
+      padding-top: 5.6rem;
+    }
+  }
+}

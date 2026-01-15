@@ -5,38 +5,18 @@
 .l-header {
   & {
     width: 100%;
-    background-color: $base-bg-color;
-    border-bottom: solid .3rem $base-font-color;
+    background-color: color(blu,dark);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
 
-    @include sp {
-      border-bottom: solid .2rem $base-font-color;
-    }
-    
     &__inner {
-      padding: 2.2rem 5.5rem;
-      
-      @include sp {
-        padding: 1.7rem 2rem;
-      }
-    }
-
-    &__logo {
-      display: block;
-      width: 30rem;
+      padding: 3.6rem 4rem;
 
       @include sp {
-        width: 14rem;
-        position: relative;
-        z-index: 9999;
+        padding: 2rem;
       }
-    }
-
-    &__logo-img {
-      width: 100%;
     }
 
     &__wrap {
@@ -45,13 +25,124 @@
       justify-content: space-between;
     }
 
+    &__logo {
+      display: block;
+      width: 38.6rem;
+
+      @include sp {
+        width: 16rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__cont {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 1.8rem;
+
+      @include sp {
+        width: 100%;
+        height: 100vh;
+        background-color: color(blu,dark);
+        padding: 12rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        position: absolute;
+        top: 0;
+        right: -100vw;
+        overflow-y: auto;
+      }
+    }
+
+    &__nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    &__nav-link {
+      color: color(blu,base);
+      font-family: $ff-fot-udmarugo;
+      font-size: 2rem;
+      line-height: 100%;
+      display: inline-block;
+      background-color: color(wt,base);
+      border-radius: 100vmax;
+      padding: 1rem 2.4rem .8rem;
+
+      @include sp {
+        font-size: 1.6rem;
+        padding: 1rem 1.6rem .8rem;
+      }
+    }
+
+    &__contact {
+      @include sp {
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__contact-txt {
+      color: color(wt,base);
+      font-family: $ff-fot-udmarugo;
+      font-size: 1.8rem;
+      line-height: 100%;
+      display: block;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__tel {
+      color: color(wt,base);
+      font-family: $ff-fot-udmarugo;
+      font-size: 4.2rem;
+      display: block;
+      margin-top: .8rem;
+
+      @include sp {
+        font-size: 3.2rem;
+      }
+    }
+
+    &__menu {
+      @include sp {
+        width: 100%;
+        margin-top: 5.6rem;
+        padding: 0 2.2rem;
+      }
+    }
+
+    &__menu-item {
+      @include sp {
+        &:not(:first-of-type) {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    &__menu-link {
+      @include sp {
+        color: color(wt,base);
+        font-family: $ff-fot-udmarugo;
+        font-size: 1.8rem;
+      }
+    }
+
     &__hamburger {
       display: none;
 
       @include sp {
-        width: 5.8rem;
-        height: 5.8rem;
-        background-color: $base-font-color;
+        width: 7.4rem;
+        height: 100%;
+        background-color: $base-bg-color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -66,9 +157,9 @@
 
     &__hamburger-line {
       display: block;
-      width: 2.4rem;
+      width: 4rem;
       height: .3rem;
-      background-color: $base-bg-color;
+      background-color: color(blu, dark);
       transition: transform .5s, opacity .5s;
     }
   }

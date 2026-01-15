@@ -1,0 +1,99 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-about-philosophy {
+  & {
+    padding-top: 5.6rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 18.2rem;
+      height: 70rem;
+      background-image: url(../img/about/philosophy/obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: 22rem;
+      z-index: -1;
+
+      @include sp {
+        width: 6rem;
+        height: 23rem;
+        top: 2.6rem;
+        right: 2rem;
+      }
+    }
+
+    &__wrap {
+      position: relative;
+
+      @include sp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 5.6rem;
+      }
+    }
+
+    &__img {
+      width: 72rem;
+      height: 72rem;
+      position: absolute;
+      top: -16rem;
+      right: 0;
+
+      @include sp {
+        width: 32rem;
+        height: 32rem;
+        position: static;
+      }
+    }
+
+    &__txtblk {
+      width: 79rem;
+      height: 79rem;
+      margin-top: 21.2rem;
+      padding: 11.4rem 14.1rem;
+      background-color: rgba($color: color(org,base), $alpha: .85);
+      border-radius: 100vmax;
+
+      @include sp {
+        width: 100%;
+        height: auto;
+        margin-top: 2.4rem;
+        padding: 4rem 2rem;
+        border-radius: 1rem;
+      }
+    }
+
+    &__blk-ttl {
+      color: color(wt,base);
+      font-size: 5.2rem;
+      letter-spacing: .075em;
+      padding-bottom: 1.4rem;
+      border-bottom: solid 2px color(wt,base);
+
+      @include sp {
+        font-size: 2.4rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    &__blk-txt {
+      color: color(wt,base);
+      font-size: 2.2rem;
+      line-height: calc(38/22);
+      margin-top: 4rem;
+
+      @include sp {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

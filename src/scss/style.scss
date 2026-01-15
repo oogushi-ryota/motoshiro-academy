@@ -15,24 +15,40 @@
 // Component
 // ===================================
 @use "object/component/g-nav" as *;
-@use "object/component/inner" as *;
-@use "object/component/ttl" as *;
-@use "object/component/subttl" as *;
-@use "object/component/ttlwrap" as *;
-@use "object/component/ttlwrap" as *;
-@use "object/component/txtwrap" as *;
-@use "object/component/sec-bg" as *;
+@use "object/component/secttl" as *;
+@use "object/component/under-fv" as *;
+@use "object/component/column" as *;
 
 // ===================================
 // Project
 // ===================================
-@use "object/project/fv" as *;
-@use "object/project/about" as *;
-@use "object/project/environment" as *;
-@use "object/project/job" as *;
-@use "object/project/exective" as *;
-@use "object/project/company" as *;
-@use "object/project/entry" as *;
+// トップページ
+@use "object/project/top/fv" as *;
+@use "object/project/top/about" as *;
+@use "object/project/top/features" as *;
+@use "object/project/top/course" as *;
+@use "object/project/top/column" as *;
+
+// 塾・講師紹介
+@use "object/project/about/about" as *;
+@use "object/project/about/philosophy" as *;
+@use "object/project/about/teacher" as *;
+@use "object/project/about/school" as *;
+
+// コース・料金
+@use "object/project/course/intro" as *;
+@use "object/project/course/menu" as *;
+
+// お問合せ・Q&A
+@use "object/project/contact/contact" as *;
+@use "object/project/contact/form" as *;
+@use "object/project/contact/faq" as *;
+
+// 元アカコラム
+@use "object/project/column/column" as *;
+@use "object/project/column/popular" as *;
+@use "object/project/column/new" as *;
+@use "object/project/column/details" as *;
 
 // ===================================
 // Utility
@@ -43,3 +59,8 @@
 // Animation
 // ===================================
 @use "animation/hamburger" as *;
+
+// ===================================
+// vendor
+// ===================================
+@use "vendor/swiper" as *;

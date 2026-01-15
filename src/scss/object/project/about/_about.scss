@@ -1,0 +1,55 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-about {
+  & {
+    &__inner {
+      max-width: 134rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    &__sec-ttl {
+      color: color(blu,base);
+      font-size: 5.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+
+      @include sp {
+        font-size: 3.2rem;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 14.4rem;
+        height: 12.5rem;
+        background-image: url(../img/common/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include sp {
+          width: 8rem;
+          height: 6.9rem;
+        }
+      }
+    }
+
+    &__sec-txt {
+      font-size: 3.4rem;
+      line-height: calc(70/34);
+      text-align: center;
+      letter-spacing: .025em;
+      margin-top: 5.6rem;
+
+      @include sp {
+        font-size: 1.8rem;
+        margin-top: 3.2rem;
+      }
+    }
+  }
+}

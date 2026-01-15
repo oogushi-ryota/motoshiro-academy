@@ -1,0 +1,19 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-top-column {
+  & {
+    padding-top: 12rem;
+
+    @include sp {
+      padding-top: 8rem;
+    }
+
+    &__inner {
+      max-width: 92rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+  }
+}

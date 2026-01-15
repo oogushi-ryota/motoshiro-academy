@@ -1,0 +1,84 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.c-column {
+  & {
+    &__list {
+      margin-top: 4rem;
+
+      @include sp {
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__item {
+      &:not(:first-of-type) {
+        margin-top: 2.4rem;
+
+        @include sp {
+          margin-top: 1.6rem;
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      @include sp {
+        display: block;
+      }
+    }
+
+    &__thumb {
+      width: 21.4rem;
+      aspect-ratio: 214/142;
+      flex-shrink: 0;
+
+      @include sp {
+        width: 100%;
+        aspect-ratio: 335/222;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &__item-ttl {
+      color: $base-font-color;
+      font-size: 2.8rem;
+      letter-spacing: .075em;
+      line-height: 150%;
+      display: -webkit-inline-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      border-bottom: solid .3rem $base-font-color;
+
+      @include sp {
+        font-size: 2rem;
+        margin-top: 1.6rem;
+        border-bottom: solid .2rem $base-font-color;
+      }
+    }
+
+    &__txt {
+      color: $base-font-color;
+      font-size: 1.8rem;
+      line-height: calc(26/18);
+      margin-top: .8rem;
+      display: -webkit-inline-box;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

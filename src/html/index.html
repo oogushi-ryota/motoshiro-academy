@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="/assets/css/style.min.css">
+  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
   <!-- フォント読み込み -->
   <script>
@@ -18,22 +19,407 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="l-header">
-    
+    <div class="l-header__inner">
+      <div class="l-header__wrap">
+        <h1 class="l-header__h1">
+          <a href="/" class="l-header__logo">
+            <img src="/assets/img/common/logo.svg" alt="元城アカデミー" width="386" height="80">
+          </a>
+        </h1>
+        <div class="l-header__hamburger js-nav-btn">
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+        </div>
+        <div class="l-header__cont js-nav">
+          <nav class="l-header__nav">
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a href="" class="l-header__nav-link">メール</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a href="tel:0535434999" class="l-header__nav-link">お電話</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a href="" class="l-header__nav-link">公式ライン</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="l-header__contact">
+            <span class="l-header__contact-txt">お問合せはお電話・メール・公式LINEから!</span>
+            <a href="tel:0535434999" class="l-header__tel">053-543-4999</a>
+          </div>
+          <nav class="l-header__menu sp">
+            <ul class="l-header__menu-list">
+              <li class="l-header__menu-item">
+                <a href="/" class="l-header__menu-link">ホーム</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="/about" class="l-header__menu-link">塾・講師紹介</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="/course" class="l-header__menu-link">コース・料金</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="/contact" class="l-header__menu-link">お問合せ・Q&A</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="/column" class="l-header__menu-link">元アカ コラム</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="l-main">
-    
+    <section class="p-top-fv">
+      <div class="swiper-container">
+        <ul class="p-top-fv__list swiper-wrapper">
+          <li class="p-top-fv__item swiper-slide">
+            <picture class="p-top-fv__img">
+              <source srcset="./assets/img/top/sp/mv-slide01.webp" type="image/webp" media="(max-width: 767px)">
+              <source srcset="./assets/img/top/sp/mv-slide01.jpg" media="(max-width: 767px)">
+              <source srcset="./assets/img/top/mv/mv-slide01.webp" type="image/webp">
+              <img src="./assets/img/top/mv/mv-slide01.jpg" alt="">
+            </picture>
+          </li>
+          <li class="p-top-fv__item swiper-slide">
+            <picture class="p-top-fv__img">
+              <source srcset="./assets/img/top/sp/mv-slide02.webp" type="image/webp" media="(max-width: 767px)">
+              <source srcset="./assets/img/top/sp/mv-slide02.jpg" media="(max-width: 767px)">
+              <source srcset="./assets/img/top/mv/mv-slide02.webp" type="image/webp">
+              <img src="./assets/img/top/mv/mv-slide02.jpg" alt="">
+            </picture>
+          </li>
+          <li class="p-top-fv__item swiper-slide">
+            <picture class="p-top-fv__img">
+              <source srcset="./assets/img/top/sp/mv-slide03.webp" type="image/webp" media="(max-width: 767px)">
+              <source srcset="./assets/img/top/sp/mv-slide03.jpg" media="(max-width: 767px)">
+              <source srcset="./assets/img/top/mv/mv-slide03.webp" type="image/webp">
+              <img src="./assets/img/top/mv/mv-slide03.jpg" alt="">
+            </picture>
+          </li>
+        </ul>
+        <div class="p-top-fv__btn">
+          <a href="" class="p-top-fv__btn-link">まずは無料体験授業・ご相談はこちら</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="g-nav pc">
+      <ul class="g-nav__list">
+        <li class="g-nav__item">
+          <a href="/" class="g-nav__link">
+            <span class="g-nav__inner">ホーム</span>
+          </a>
+        </li>
+        <li class="g-nav__item">
+          <a href="/about" class="g-nav__link">
+            <span class="g-nav__inner">塾・講師紹介</span>
+          </a>
+        </li>
+        <li class="g-nav__item">
+          <a href="/course" class="g-nav__link">
+            <span class="g-nav__inner">コース・料金</span>
+          </a>
+        </li>
+        <li class="g-nav__item">
+          <a href="/contact" class="g-nav__link">
+            <span class="g-nav__inner">お問合せ・Q&A</span>
+          </a>
+        </li>
+        <li class="g-nav__item">
+          <a href="/column" class="g-nav__link">
+            <span class="g-nav__inner">元アカ コラム</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="p-top-about">
+      <div class="p-top-about__inner">
+        <h2 class="p-top-about__ttl c-top-secttl">完全 1 対 1 指導の 数英専⾨塾</h2>
+        <div class="p-top-about__wrap">
+          <picture class="p-top-about__wrap-img">
+            <source srcset="./assets/img/top/about/about_img01.webp" type="image/webp">
+            <img src="./assets/img/top/about/about_img01.jpg" width="600" height="356" alt="完全1対1指導の数英専⾨塾" loading="lazy">
+          </picture>
+          <div class="p-top-about__wrap-txtarea">
+            <div class="p-top-about__wrap-txtbg">
+              <p class="p-top-about__wrap-txt">
+                「勉強できる⼈が理解の“本質”を教える。」<br>
+                ただ⼿順を覚えるのではなく、<br>
+                なぜそうなるのかを⼀緒に考え、<br>
+                数学も英語も、⾃分で解ける⼒を育てます。<br>
+                また、中学・⾼校内容を⾒据えた<br>
+                先取り学習にも⼒を⼊れています。 
+              </p>
+            </div>
+          </div>
+        </div>
+        <ol class="p-top-about__list">
+          <li class="p-top-about__item">
+            <span class="p-top-about__item-num">01</span>
+            <div class="p-top-about__txtblk">
+              <h3 class="p-top-about__item-ttl">医大生講師による指導。</h3>
+              <p class="p-top-about__item-txt">数英を得意とする浜松医科⼤学の現役⽣が、理解の本質を押さえた効率的な学び⽅を指導します。⼀⼈ひとりの学⼒や⽬標に合わせて、数学・英語ともに基礎の定着から応⽤・⼊試対策まで柔軟に対応します。</p>
+            </div>
+          </li>
+          <li class="p-top-about__item">
+            <span class="p-top-about__item-num">02</span>
+            <div class="p-top-about__txtblk">
+              <h3 class="p-top-about__item-ttl">他塾との併用にも、単科特化にも対応。</h3>
+              <p class="p-top-about__item-txt">
+                佐鳴・秀英・⽇能研・浜学園などの⼤⼿塾に通う⽣徒はもちろん、<br class="pc">
+                「数学・英語のどちらかを重点的に伸ばしたい」<br class="pc">
+                「数英を 1 対 1 でじっくり⾒てほしい」という⽣徒にも選ばれています。
+              </p>
+            </div>
+          </li>
+          <li class="p-top-about__item">
+            <span class="p-top-about__item-num">03</span>
+            <div class="p-top-about__txtblk">
+              <h3 class="p-top-about__item-ttl">数学・英語を得点源に。</h3>
+              <p class="p-top-about__item-txt">医⼤⽣講師が「なぜそうなるのか」を丁寧に解説し、数学・英語ともに⾃⼒で解ける⼒を育てます。解法や構⽂を理解した上で、効率よく・スピーディーに解いていく⽅法まで指導します。 </p>
+            </div>
+          </li>
+        </ol>
+        <picture class="p-top-about__img">
+          <source srcset="./assets/img/top/about/about_img02.webp" type="image/webp">
+          <img src="./assets/img/top/about/about_img02.jpg" width="925" height="618" alt="" loading="lazy">
+        </picture>
+      </div>
+    </section>
+
+    <section class="p-top-features">
+      <div class="p-top-features__inner">
+        <h2 class="p-top-features__ttl c-top-secttl">個別指導の違い</h2>
+        <div class="p-top-features__wrap">
+          <table class="p-top-features__table">
+            <thead class="p-top-features__thead">
+              <tr class="p-top-features__thead-tr">
+                <th scope="col" class="p-top-features__thead-th"></th>
+                <th scope="col" class="p-top-features__thead-th p-top-features__thead-th--academy">元城アカデミー</th>
+                <th scope="col" class="p-top-features__thead-th">一般的な塾</th>
+              </tr>
+            </thead>
+            <tbody class="p-top-features__tbody">
+              <tr class="p-top-features__tbody-tr">
+                <th scope="row" class="p-top-features__tbody-th">
+                  講師一人に対して<br>
+                  生徒の人数
+                </th>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img01.svg" width="243" height="160" alt="完全１：１個別指導" loading="lazy">
+                    <figcaption>完全１：１個別指導</figcaption>
+                  </figure>
+                </td>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img02.svg" width="243" height="160" alt="実質１：２指導" loading="lazy">
+                    <figcaption>実質１：２指導</figcaption>
+                  </figure>
+                </td>
+              </tr>
+              <tr class="p-top-features__tbody-tr">
+                <th scope="row" class="p-top-features__tbody-th">授業時間</th>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img03.svg" width="243" height="160" alt="授業時間すべて対応" loading="lazy">
+                    <figcaption>授業時間すべて対応</figcaption>
+                  </figure>
+                </td>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img04.svg" width="243" height="160" alt="実質、授業時間の半分しか指導がない" loading="lazy">
+                    <figcaption>実質、授業時間の半分しか<br class="sp">指導がない</figcaption>
+                  </figure>
+                </td>
+              </tr>
+              <tr class="p-top-features__tbody-tr">
+                <th scope="row" class="p-top-features__tbody-th">待ち時間</th>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img05.svg" width="243" height="160" alt="なし" loading="lazy">
+                    <figcaption>なし</figcaption>
+                  </figure>
+                </td>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img06.svg" width="243" height="160" alt="もう一人の指導中は待ち時間となる" loading="lazy">
+                    <figcaption>もう一人の指導中は<br class="sp">待ち時間となる</figcaption>
+                  </figure>
+                </td>
+              </tr>
+              <tr class="p-top-features__tbody-tr">
+                <th scope="row" class="p-top-features__tbody-th">講師の大学</th>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img07.svg" width="243" height="160" alt="浜松医科大学 現役生" loading="lazy">
+                    <figcaption>浜松医科大学 現役生</figcaption>
+                  </figure>
+                </td>
+                <td class="p-top-features__tbody-td">
+                  <figure class="p-top-features__img">
+                    <img src="./assets/img/top/features/table_img08.svg" width="243" height="160" alt="大学名 非公開・不明" loading="lazy">
+                    <figcaption>大学名 非公開・不明</figcaption>
+                  </figure>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="p-top-features__txt">
+          講師 1 名が60 分すべてを<br>
+          ⼀⼈の⽣徒に対応します。
+        </p>
+      </div>
+    </section>
+
+    <section class="p-top-course">
+      <div class="p-top-course__inner">
+        <h2 class="p-top-course__ttl c-top-secttl">コース案内</h2>
+        <ul class="p-top-course__list">
+          <li class="p-top-course__item">
+            <picture class="p-top-course__img">
+              <source srcset="./assets/img/top/course/course_img01.webp" type="image/webp">
+              <img src="./assets/img/top/course/course_img01.jpg" width="381" height="254" alt="小学生コース" loading="lazy">
+            </picture>
+            <div class="p-top-course__txtbox">
+              <h3 class="p-top-course__item-ttl">小学生コース</h3>
+              <p class="p-top-course__txt">中学数学・英語を⾒据えた先取り学習を⾏い、数学的思考⼒とあわせて、英語学習に必要な基礎的な理解⼒も育てます。</p>
+            </div>
+          </li>
+          <li class="p-top-course__item">
+            <picture class="p-top-course__img">
+              <source srcset="./assets/img/top/course/course_img02.webp" type="image/webp">
+              <img src="./assets/img/top/course/course_img02.jpg" width="381" height="254" alt="中学生コース" loading="lazy">
+            </picture>
+            <div class="p-top-course__txtbox">
+              <h3 class="p-top-course__item-ttl">中学生コース</h3>
+              <p class="p-top-course__txt">内申・定期テスト対策から⾼校⼊試まで対応。数学・英語を中⼼に、学校や他塾で学んだ内容を整理・定着させます。</p>
+            </div>
+          </li>
+          <li class="p-top-course__item">
+            <picture class="p-top-course__img">
+              <source srcset="./assets/img/top/course/course_img03.webp" type="image/webp">
+              <img src="./assets/img/top/course/course_img03.jpg" width="381" height="254" alt="高校生コース" loading="lazy">
+            </picture>
+            <div class="p-top-course__txtbox">
+              <h3 class="p-top-course__item-ttl">高校生コース</h3>
+              <p class="p-top-course__txt">⼤学⼊試に向けた数学・英語の総合⼒を育成。共通テストから⼆次試験まで、思考の過程を重視した指導で応⽤⼒・記述⼒を鍛えます。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p-top-column c-column">
+      <div class="p-top-column__inner">
+        <h2 class="p-top-column__ttl c-top-secttl">数学・英語コラム</h2>
+        <ul class="c-column__list">
+          <li class="c-column__item">
+            <a href="" class="c-column__link">
+              <figure class="c-column__thumb">
+                <img src="./assets/img/sample.jpg" width="214" height="142" alt="サムネイル" loading="lazy">
+              </figure>
+              <div class="c-column__txtbox">
+                <h3 class="c-column__item-ttl">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                <p class="c-column__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-column__item">
+            <a href="" class="c-column__link">
+              <figure class="c-column__thumb">
+                <img src="./assets/img/sample.jpg" width="214" height="142" alt="サムネイル" loading="lazy">
+              </figure>
+              <div class="c-column__txtbox">
+                <h3 class="c-column__item-ttl">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                <p class="c-column__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-column__item">
+            <a href="" class="c-column__link">
+              <figure class="c-column__thumb">
+                <img src="./assets/img/sample.jpg" width="214" height="142" alt="サムネイル" loading="lazy">
+              </figure>
+              <div class="c-column__txtbox">
+                <h3 class="c-column__item-ttl">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                <p class="c-column__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="l-footer">
-    
+    <div class="l-footer__head">
+      <p class="l-footer__head-txt">お問合せはお電話・メール・公式LINEから！</p>
+      <a href="tel:0535434999" class="l-footer__head-tel">053-543-4999</a>
+      <ul class="l-footer__head-list">
+        <li class="l-footer__head-item">
+          <a href="" class="l-footer__head-link">メール</a>
+        </li>
+        <li class="l-footer__head-item">
+          <a href="tel:0535434999" class="l-footer__head-link">お電話</a>
+        </li>
+        <li class="l-footer__head-item">
+          <a href="" class="l-footer__head-link">公式ライン</a>
+        </li>
+      </ul>
+    </div>
+    <div class="l-footer__bg">
+      <div class="l-footer__inner">
+        <nav class="l-footer__nav">
+          <ul class="l-footer__nav-list">
+            <li class="l-footer__nav-item">
+              <a href="/" class="l-footer__nav-link">ホーム</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href="/about" class="l-footer__nav-link">塾・講師紹介</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href="/course" class="l-footer__nav-link">コース・料金</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href="/contact" class="l-footer__nav-link">お問い合わせ・Q&A</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href="/column" class="l-footer__nav-link">コラム</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-footer__wrap">
+          <div class="l-footer__cont">
+            <a href="/" class="l-footer__logo">
+              <img src="/assets/img/common/logo.svg" alt="元城アカデミー" width="500" height="102">
+            </a>
+            <address class="l-footer__address">〒430-0946 静岡県浜松市中央区元城町 215-6 出世横丁 2 号室</address>
+            <span class="l-footer__copy">
+              姉妹校：[松城ゼミナール（英語専門塾）](<a href="https://matsushiro-seminar.jp" class="l-footer__copy-link" target="_blank">https://matsushiro-seminar.jp</a>)<br>
+              © 2025 元城アカデミー（Motoshiro Academy）All Rights Reserved.
+            </span>
+          </div>
+          <div class="l-footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8093748665037!2d137.723987011616!3d34.70998768260108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ade62323c810b%3A0xef11a4062dbb1969!2z44CSNDMwLTA5NDYg6Z2Z5bKh55yM5rWc5p2-5biC5Lit5aSu5Yy65YWD5Z-O55S677yS77yR77yV4oiS77yW!5e0!3m2!1sja!2sjp!4v1767631974276!5m2!1sja!2sjp" width="640" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <script type="module" src="assets/js/main.min.js"></script>
+  <script type="module" src="/assets/js/main.min.js"></script>
 </body>
 </html>

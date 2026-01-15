@@ -1,8 +1,8 @@
-// === 外部ライブラリ読み込み ===
-import "swiper/css/bundle";
-
 // === ユーティリティライブラリ読み込み ===
 import { initHamburgerMenu } from "./utils/hamburgerUtils.js";
+import { setHeaderHeight } from "./utils/headerHeightUtils.js";
+import { setFooterHeight } from "./utils/footerHeightUtils.js";
+import { initSwiper } from "./utils/swiperUtils";
 import { initAnchorSmoothScroll } from "./utils/scrollUtils.js";
 // import { initTabs } from "./utils/tabUtils.js";
 import { preventEnterSubmit } from "./utils/formUtils.js";
@@ -14,6 +14,9 @@ window.addEventListener('DOMContentLoaded', () => {
     btnSelector: ".js-nav-btn",
     closeTargetSelector: ".g-nav__item a",
   });
+  setHeaderHeight();       //ヘッダーの高さを取得
+  setFooterHeight();       //フッターの高さを取得
+  initSwiper();            //スワイパー
 
   // initTabs()            //タブ切り替え
   initAnchorSmoothScroll();     // ← スムーススクロール

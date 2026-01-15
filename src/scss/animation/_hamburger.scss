@@ -4,10 +4,10 @@
 
 .js-nav {
   & {
-    transition: top .5s;
+    transition: right .5s;
 
     &.is-active {
-      top: 0;
+      right: 0;
     }
   }
 }

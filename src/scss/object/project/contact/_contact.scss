@@ -1,0 +1,67 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-contact {
+  & {
+    overflow: unset;
+
+    @include sp {
+      overflow: hidden;
+    }
+
+    &__obj {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 5.1rem;
+        height: calc(100% + var(--footer-height));
+        background-image: url(../img/common/obj.svg);
+        background-repeat: repeat-y;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 17.3rem;
+        z-index: -1;
+
+        @include sp {
+          display: none;
+        }
+      }
+    }
+
+    &__ttl {
+      color: color(blu,base);
+      font-size: 7rem;
+      font-weight: $base-font-bold;
+      letter-spacing: .05em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      @include sp {
+        font-size: 2.8rem;
+        gap: 1rem;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 18.6rem;
+        height: 16.1rem;
+        background-image: url(../img/common/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include sp {
+          width: 5.6rem;
+          height: 4.9rem;
+        }
+      }
+    }
+  }
+}

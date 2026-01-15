@@ -4,84 +4,201 @@
 
 .l-footer {
   & {
-    background-color: $base-font-color;
+    padding-top: 18rem;
 
-    &__cont {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 4rem 0;
-
-      @include sp {
-        flex-direction: column;
-        justify-content: center;
-        gap: 3.2rem;
-      }
+    @include sp {
+      padding-top: 8rem;
     }
 
-    &__blk {
+    &__head {
+      max-width: 144rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    &__head-txt {
+      color: color(blu,base);
+      font-family: $ff-fot-udmarugo;
+      font-size: 2rem;
+
+      @include sp {
+        font-size: 1.6rem;
+      } 
+    }
+
+    &__head-tel {
+      color: color(blu,base);
+      font-family: $ff-fot-udmarugo;
+      font-size: 3.2rem;
+    }
+
+    &__head-list {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      gap: 4rem;
+      gap: 1.2rem;
+    }
+
+    &__head-link {
+      color: color(wt,base);
+      font-family: $ff-fot-udmarugo;
+      font-size: 2.4rem;
+      background-color: color(blu,base);
+      border-radius: 100vmax;
+      padding: .8rem 3.2rem;
 
       @include sp {
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.6rem;
+        font-size: 1.8rem;
+        padding: .6rem 1.6rem;
       }
     }
 
-    &__logo {
-      display: inline-block;
-      width: 30rem;
-
-      @include sp {
-        width: 22.5rem;
-      }
-    }
-
-    &__logo-img {
-      width: 100%;
-    }
-
-    &__link {
-      color: $base-bg-color;
-      font-size: 1.5rem;
-      line-height: 100%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: .8rem;
-
-      @include sp {
-        font-size: 1.4rem;
-      }
+    &__bg {
+      background-color: color(blu,dark);
+      position: relative;
+      margin-top: 4rem;
 
       &::after {
         content: "";
-        display: block;
-        width: 1.5rem;
-        height: 1.4rem;
-        background-image: url(../img/common/icon_link.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
+        width: 100%;
+        height: .8rem;
+        background-color: color(wt,base);
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
 
         @include sp {
-          width: 1.4rem;
-          height: 1.3rem;
+          height: .4rem;
         }
       }
     }
 
-    &__small {
-      color: $base-bg-color;
-      font-size: 1.2rem;
-      font-weight: $base-font-medium;
-      line-height: 100%;
+    &__inner {
+      padding: 6rem 12rem;
 
       @include sp {
-        font-size: 1rem;
+        padding: 4rem 2rem;
+      }
+    }
+
+    &__nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 3.2rem;
+
+      @include sp {
+        gap: 2rem;
+      }
+    }
+
+    &__nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 3.2rem;
+
+      @include sp {
+        gap: 2rem;
+      }
+
+      &:not(:last-of-type) {
+        &::after {
+          content: "|";
+          font-size: 2rem;
+          color: color(wt,base);
+        }
+      }
+    }
+
+    &__nav-link {
+      color: color(wt,base);
+      font-family: $ff-noto-sans;
+      font-size: 3.6rem;
+      font-weight: $base-font-light;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 4rem;
+      
+      @include sp {
+        margin-top: 8rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__logo {
+      width: 50rem;
+
+      @include sp {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__address {
+      color: color(wt,base);
+      font-family: $ff-noto-sans;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: $base-font-regular;
+      margin-top: 1.8rem;
+
+      @include sp {
+        font-size: 1.8rem;
+        line-height: 150%;
+      }
+    }
+
+    &__copy {
+      color: color(wt,base);
+      font-family: $ff-noto-sans;
+      font-size: 2.4rem;
+      font-weight: $base-font-light;
+      line-height: calc(35/24);
+      display: block;
+      margin-top: 2.4rem;
+
+      @include sp {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__copy-link {
+      color: color(wt,base);
+    }
+
+    &__map {
+      width: 64rem;
+      height: 50rem;
+
+      @include sp {
+        width: 100%;
+        height: 30rem;
+        margin-top: 2.4rem;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
       }
     }
   }
