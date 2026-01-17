@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
 
   <!-- フォント読み込み -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'shv1ewg',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Murecho:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
 </head>
@@ -17,39 +28,54 @@
   <header class="l-header">
     <div class="l-header__inner">
       <div class="l-header__wrap">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header__logo">
-          <picture class="l-header__logo-img">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.png" alt="株式会社クラフトマンのロゴ" width="300" height="52">
-          </picture>
-        </a>
+        <h1 class="l-header__h1">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header__logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="元城アカデミー" width="386" height="80">
+          </a>
+        </h1>
         <div class="l-header__hamburger js-nav-btn">
           <span class="l-header__hamburger-line"></span>
           <span class="l-header__hamburger-line"></span>
           <span class="l-header__hamburger-line"></span>
         </div>
-        <nav class="g-nav js-nav">
-          <ul class="g-nav__list">
-            <li class="g-nav__item">
-              <a href="#environment" class="g-nav__link">働く環境</a>
-            </li>
-            <li class="g-nav__item">
-              <a href="#recruit" class="g-nav__link">募集要項</a>
-            </li>
-            <li class="g-nav__item">
-              <a href="#executives" class="g-nav__link">役員紹介</a>
-            </li>
-            <li class="g-nav__item">
-              <a href="#message" class="g-nav__link">代表メッセージ</a>
-            </li>
-            <li class="g-nav__item">
-              <a href="#about" class="g-nav__link">会社概要</a>
-            </li>
-            <li class="g-nav__item">
-              <a href="#entry" class="g-nav__btn">エントリー</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="l-header__cont js-nav">
+          <nav class="l-header__nav">
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a href="" class="l-header__nav-link">メール</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a href="tel:0535434999" class="l-header__nav-link">お電話</a>
+              </li>
+              <li class="l-header__nav-item">
+                <a href="" class="l-header__nav-link">公式ライン</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="l-header__contact">
+            <span class="l-header__contact-txt">お問合せはお電話・メール・公式LINEから!</span>
+            <a href="tel:0535434999" class="l-header__tel">053-543-4999</a>
+          </div>
+          <nav class="l-header__menu sp">
+            <ul class="l-header__menu-list">
+              <li class="l-header__menu-item">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header__menu-link">ホーム</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="l-header__menu-link">塾・講師紹介</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="<?php echo esc_url( home_url( '/course/' ) ); ?>" class="l-header__menu-link">コース・料金</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="l-header__menu-link">お問合せ・Q&A</a>
+              </li>
+              <li class="l-header__menu-item">
+                <a href="<?php echo esc_url( home_url( '/column/' ) ); ?>" class="l-header__menu-link">元アカ コラム</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>

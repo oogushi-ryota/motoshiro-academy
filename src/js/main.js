@@ -5,7 +5,7 @@ import { setFooterHeight } from "./utils/footerHeightUtils.js";
 import { initSwiper } from "./utils/swiperUtils";
 import { initAnchorSmoothScroll } from "./utils/scrollUtils.js";
 // import { initTabs } from "./utils/tabUtils.js";
-import { preventEnterSubmit } from "./utils/formUtils.js";
+import { preventEnterSubmit, disableSelectPlaceholder } from "./utils/formUtils.js";
 
 // HTMLの構造がすべて解析されて、DOM操作が安全に行える状態になったタイミングで実行
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,4 +21,5 @@ window.addEventListener('DOMContentLoaded', () => {
   // initTabs()            //タブ切り替え
   initAnchorSmoothScroll();     // ← スムーススクロール
   preventEnterSubmit();
+  disableSelectPlaceholder();
 });

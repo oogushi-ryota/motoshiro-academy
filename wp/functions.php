@@ -18,6 +18,110 @@ add_action( 'after_setup_theme', 'my_theme_support' );
 //スラッグの変更によるリダイレクト機能を停止
 remove_action( 'template_redirect', 'wp_old_slug_redirect' );
 
+// 「投稿」の表示変更
+function Change_menulabel() {
+	global $menu;
+	global $submenu;
+	$name = 'コラム';
+	$menu[5][0] = $name;
+	$submenu['edit.php'][5][0] = $name.'一覧';
+	$submenu['edit.php'][10][0] = '新規'.$name.'投稿';
+}
+function Change_objectlabel() {
+	global $wp_post_types;
+	$name = 'コラム';
+	$labels = &$wp_post_types['post']->labels;
+	$labels->name = $name;
+	$labels->singular_name = $name;
+	$labels->add_new = _x('追加', $name);
+	$labels->add_new_item = $name.'の新規追加';
+	$labels->edit_item = $name.'の編集';
+	$labels->new_item = '新規'.$name;
+	$labels->view_item = $name.'を表示';
+	$labels->search_items = $name.'を検索';
+	$labels->not_found = $name.'が見つかりませんでした';
+	$labels->not_found_in_trash = 'ゴミ箱に'.$name.'は見つかりませんでした';
+}
+add_action( 'init', 'Change_objectlabel' );
+add_action( 'admin_menu', 'Change_menulabel' );
+
+// アーカイブページ生成
+function post_has_archive( $args, $post_type ) {
+	if ( 'post' == $post_type ) {
+		$args['rewrite'] = true;
+		$args['has_archive'] = 'column';
+	}
+	return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+
+add_filter( 'post_type_archive_link', function( $link, $post_type ) {
+	if ( 'post' === $post_type ) {
+			$post_type_object = get_post_type_object( 'post' );
+			$slug = $post_type_object->has_archive;
+			$link = get_home_url( null, '/' . $slug . '/' );
+	}
+	return $link;
+}, 10, 2 );
+function add_article_post_permalink( $permalink ) {
+	$permalink = '/column' . $permalink;
+	return $permalink;
+}
+add_filter( 'pre_post_link', 'add_article_post_permalink' );
+	function add_article_post_rewrite_rules( $post_rewrite ) {
+		$return_rule = array();
+		foreach ( $post_rewrite as $regex => $rewrite ) {
+			$return_rule['column/' . $regex] = $rewrite;
+		}
+	return $return_rule;
+}
+add_filter( 'post_rewrite_rules', 'add_article_post_rewrite_rules' );
+
+// タグを選択式に変更
+function change_tags_to_checklist() {
+    global $wp_taxonomies;
+    $wp_taxonomies['post_tag']->hierarchical = true;
+}
+add_action( 'init', 'change_tags_to_checklist' );
+
+// 人気記事出力
+add_filter( 'wpp_post', function ( $html, $post, $instance ) {
+
+  if ( is_array( $post ) && isset( $post['post_id'] ) ) {
+    $post_id = (int) $post['post_id'];
+  } elseif ( is_object( $post ) && isset( $post->id ) ) {
+    $post_id = (int) $post->id;
+  } else {
+    return '';
+  }
+  $excerpt = get_the_excerpt( $post_id );
+  ob_start();
+  ?>
+  <li class="c-column__item">
+    <a href="<?php echo esc_url( get_permalink( $post_id ) ); ?>" class="c-column__link">
+      <figure class="c-column__thumb">
+        <?php if ( has_post_thumbnail( $post_id ) ) : ?>
+          <img src="<?php echo esc_url( get_the_post_thumbnail_url( $post_id, 'full' ) ); ?>" width="214" height="142" alt="サムネイル" loading="lazy">
+        <?php else : ?>
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/common/thumbnail.jpg' ); ?>" alt="代替画像" loading="lazy">
+        <?php endif; ?>
+      </figure>
+      <div class="c-column__txtbox">
+        <h3 class="c-column__item-ttl">
+          <?php echo esc_html( get_the_title( $post_id ) ); ?>
+        </h3>
+        <?php if ( $excerpt ) : ?>
+          <p class="c-column__txt">
+            <?php echo esc_html( $excerpt ); ?>
+          </p>
+        <?php endif; ?>
+      </div>
+    </a>
+  </li>
+  <?php
+  return ob_get_clean();
+}, 10, 3 );
+
 // MW WP Formで自動挿入されるp・brタグを削除
 function mvwpform_autop_filter()
 {
@@ -34,11 +138,11 @@ mvwpform_autop_filter();
 // MW WP Form のショートコードに独自変数を追加
 function my_mwform_custom_shortcode( $shortcode, $atts, $content, $form_key ) {
 	if ( $shortcode === 'home_url' ) {
-		return esc_url( home_url( '/' ) );
+			return esc_url( home_url( '/' ) );
 	}
 	return $shortcode;
 }
-add_filter( 'mwform_shortcode_mw-wp-form-16', 'my_mwform_custom_shortcode', 10, 4 );
+add_filter( 'mwform_shortcode_mw-wp-form-24', 'my_mwform_custom_shortcode', 10, 4 );
 
 // 404ページをトップにリダイレクト
 add_action('template_redirect', function() {
@@ -47,5 +151,4 @@ add_action('template_redirect', function() {
 		exit;
 	}
 });
-
 ?>
