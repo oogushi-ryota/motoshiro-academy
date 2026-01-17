@@ -87,6 +87,7 @@
 
       @include sp {
         font-size: 1.4rem;
+        padding: .3rem .8rem .3rem;
       }
     }
 
@@ -110,16 +111,20 @@
     }
 
     &__default {
+      color: $base-font-color;
       font-size: 2rem;
       line-height: 140%;
       width: 100%;
+      min-height: 7.2rem;
       padding: 2rem;
+      background-color: color(wt,base);
       border-radius: 1rem;
       border: solid .2rem color(blu,base);
       box-sizing: border-box;
 
       @include sp {
         font-size: 1.4rem;
+        min-height: 5.6rem;
         padding: 1.6rem;
       }
 
