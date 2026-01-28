@@ -38,7 +38,7 @@
       margin-top: 4rem;
 
       @include sp {
-        width: 56rem;
+        width: 46rem;
         margin: 3.2rem 2rem 0 0;
       }
     }
@@ -46,6 +46,10 @@
     &__thead {
       background-color: color(blu,base);
       height: 7.2rem;
+
+      @include sp {
+        height: 4.8rem;
+      }
     }
 
     &__thead-th {
@@ -57,7 +61,8 @@
       vertical-align: middle;
 
       @include sp {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        width: 10rem;
       }
 
       &:first-of-type {
@@ -65,7 +70,7 @@
         border-right: solid 1px color(wt,base);
 
         @include sp {
-          width: 16rem;
+          width: 10rem;
         }
       }
 
@@ -76,6 +81,10 @@
 
     &__thead-tr {
       height: 7.2rem;
+
+      @include sp {
+        height: 4.8rem;
+      }
     }
 
     &__tbody-tr {
@@ -103,7 +112,7 @@
       background-color: color(blu,base);
 
       @include sp {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -111,6 +120,10 @@
       background-color: color(wt,base);
       padding: 2.4rem 0 1.6rem;
       border: solid 1px color(blu,base);
+
+      @include sp {
+        padding: 1.2rem 0;
+      }
     }
 
     &__img {
@@ -122,7 +135,7 @@
       margin: 0 auto;
 
       @include sp {
-        width: 16rem;
+        width: 12rem;
       }
     }
 
@@ -137,6 +150,7 @@
 
       @include sp {
         font-size: 1.2rem;
+        margin-top: .6rem;
       }
     }
 

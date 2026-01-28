@@ -16,6 +16,9 @@ Template Name: トップページ
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/mv/mv-slide01.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/mv/mv-slide01.jpg" alt="">
             </picture>
+            <div class="p-top-fv__btn">
+              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="p-top-fv__btn-link">まずは無料体験授業・ご相談はこちら</a>
+            </div>
           </li>
           <li class="p-top-fv__item swiper-slide">
             <picture class="p-top-fv__img">
@@ -24,6 +27,9 @@ Template Name: トップページ
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/mv/mv-slide02.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/mv/mv-slide02.jpg" alt="">
             </picture>
+            <div class="p-top-fv__btn sp">
+              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="p-top-fv__btn-link">まずは無料体験授業・ご相談はこちら</a>
+            </div>
           </li>
           <li class="p-top-fv__item swiper-slide">
             <picture class="p-top-fv__img">
@@ -32,11 +38,11 @@ Template Name: トップページ
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/mv/mv-slide03.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/mv/mv-slide03.jpg" alt="">
             </picture>
+            <div class="p-top-fv__btn sp">
+              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="p-top-fv__btn-link">まずは無料体験授業・ご相談はこちら</a>
+            </div>
           </li>
         </ul>
-        <div class="p-top-fv__btn">
-          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="p-top-fv__btn-link">まずは無料体験授業・ご相談はこちら</a>
-        </div>
       </div>
     </section>
 
@@ -139,7 +145,7 @@ Template Name: トップページ
                 <td class="p-top-features__tbody-td">
                   <figure class="p-top-features__img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/features/table_img04.svg" width="243" height="160" alt="実質、授業時間の半分しか指導がない" loading="lazy">
-                    <figcaption>実質、授業時間の半分しか<br class="sp">指導がない</figcaption>
+                    <figcaption>実質、授業時間の<br class="sp">半分しか指導がない</figcaption>
                   </figure>
                 </td>
               </tr>
@@ -163,13 +169,13 @@ Template Name: トップページ
                 <td class="p-top-features__tbody-td">
                   <figure class="p-top-features__img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/features/table_img07.svg" width="243" height="160" alt="浜松医科大学 現役生" loading="lazy">
-                    <figcaption>浜松医科大学 現役生</figcaption>
+                    <figcaption>浜松医科大学 <br class="sp">現役生</figcaption>
                   </figure>
                 </td>
                 <td class="p-top-features__tbody-td">
                   <figure class="p-top-features__img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/features/table_img08.svg" width="243" height="160" alt="大学名 非公開・不明" loading="lazy">
-                    <figcaption>大学名 非公開・不明</figcaption>
+                    <figcaption>大学名 <br class="sp">非公開・不明</figcaption>
                   </figure>
                 </td>
               </tr>

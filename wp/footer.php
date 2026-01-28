@@ -10,7 +10,7 @@
           <a href="tel:0535434999" class="l-footer__head-link">お電話</a>
         </li>
         <li class="l-footer__head-item">
-          <a href="" class="l-footer__head-link">公式ライン</a>
+          <a href="https://line.me/R/ti/p/@479fhrdb" class="l-footer__head-link" target="_blank" rel="noopener noreferrer">公式ライン</a>
         </li>
       </ul>
     </div>

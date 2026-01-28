@@ -76,10 +76,10 @@
       color: color(wt,base);
       font-size: 1.6rem;
       line-height: calc(32/16);
-      display: -webkit-inline-box;
-      overflow: hidden;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
+      // display: -webkit-inline-box;
+      // overflow: hidden;
+      // -webkit-line-clamp: 3;
+      // -webkit-box-orient: vertical;
 
       @include sp {
         font-size: 1.4rem;

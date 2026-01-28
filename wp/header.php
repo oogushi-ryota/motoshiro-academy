@@ -48,7 +48,7 @@
                 <a href="tel:0535434999" class="l-header__nav-link">お電話</a>
               </li>
               <li class="l-header__nav-item">
-                <a href="" class="l-header__nav-link">公式ライン</a>
+                <a href="https://line.me/R/ti/p/@479fhrdb" class="l-header__nav-link" target="_blank" rel="noopener noreferrer">公式ライン</a>
               </li>
             </ul>
           </nav>

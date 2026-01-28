@@ -48,102 +48,125 @@ Template Name: 塾・講師紹介
       <div class="p-about__inner">
         <h2 class="p-about__sec-ttl">講師紹介</h2>
         <p class="p-about__sec-txt">
-          元城アカデミーでは、浜松医科大学の学生講師を中心に、<br>
-          数学・英語を得意とする講師陣が指導しています。<br>
+          元城アカデミーでは、<br>
+          浜松医科大学の学生で数学・英語を得意とする講師陣が指導しています。<br>
           各講師がそれぞれの専門や経験を活かし、生徒一人ひとりの理解に寄り添います。<br>
           学力だけでなく、誠実さ・人柄・教える力を重視して採用しています。
         </p>
         <ul class="p-about-teacher__list">
           <li class="p-about-teacher__item">
-            <picture class="p-about-teacher__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sample.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" width="235" height="235" alt="講師写真" loading="lazy">
-            </picture>
+            <figure class="p-about-teacher__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/teacher/teacher_img01.svg" width="235" height="235" alt="講師写真" loading="lazy">
+            </figure>
             <div class="p-about-teacher__item-head">
-              <span class="p-about-teacher__name">丹羽 清香</span>
+              <span class="p-about-teacher__name">S.N</span>
               <span class="p-about-teacher__faculty">医学科 1 年</span>
             </div>
             <p class="p-about-teacher__txt">
-              「わかる」から<br>
-              「できる」までを一緒に<br>
-              大切にしていきましょう！
+              一人ひとりの理解度に合わせて、<br>
+              丁寧にサポートいたします！
             </p>
           </li>
           <li class="p-about-teacher__item">
-            <picture class="p-about-teacher__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sample.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" width="235" height="235" alt="講師写真" loading="lazy">
-            </picture>
+            <figure class="p-about-teacher__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/teacher/teacher_img02.svg" width="235" height="235" alt="講師写真" loading="lazy">
+            </figure>
             <div class="p-about-teacher__item-head">
-              <span class="p-about-teacher__name">山下 紀美子</span>
-              <span class="p-about-teacher__faculty">医学科 3 年</span>
+              <span class="p-about-teacher__name">N.Y</span>
+              <span class="p-about-teacher__faculty">医学科 2 年</span>
             </div>
             <p class="p-about-teacher__txt">
-              「わかる」から<br>
-              「できる」までを一緒に<br>
-              大切にしていきましょう！
+              一緒に勉強を楽しんで<br>
+              レベルアップして<br>
+              いきましょう！
             </p>
           </li>
           <li class="p-about-teacher__item">
-            <picture class="p-about-teacher__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sample.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" width="235" height="235" alt="講師写真" loading="lazy">
-            </picture>
+            <figure class="p-about-teacher__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/teacher/teacher_img03.svg" width="235" height="235" alt="講師写真" loading="lazy">
+            </figure>
             <div class="p-about-teacher__item-head">
-              <span class="p-about-teacher__name">山下 紀美子</span>
-              <span class="p-about-teacher__faculty">医学科 3 年</span>
+              <span class="p-about-teacher__name">K.M</span>
+              <span class="p-about-teacher__faculty">医学科 2 年</span>
             </div>
             <p class="p-about-teacher__txt">
-              「わかる」から<br>
-              「できる」までを一緒に<br>
-              大切にしていきましょう！
+              一人ひとりに合った指導を<br>
+              大切にし、着実に学びを<br>
+              進めたい方をサポートします。
             </p>
           </li>
           <li class="p-about-teacher__item">
-            <picture class="p-about-teacher__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sample.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" width="235" height="235" alt="講師写真" loading="lazy">
-            </picture>
+            <figure class="p-about-teacher__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/teacher/teacher_img04.svg" width="235" height="235" alt="講師写真" loading="lazy">
+            </figure>
             <div class="p-about-teacher__item-head">
-              <span class="p-about-teacher__name">山下 紀美子</span>
-              <span class="p-about-teacher__faculty">医学科 3 年</span>
+              <span class="p-about-teacher__name">K.Y</span>
+              <span class="p-about-teacher__faculty">医学科 2 年</span>
             </div>
             <p class="p-about-teacher__txt">
-              「わかる」から<br>
-              「できる」までを一緒に<br>
-              大切にしていきましょう！
+              一人ひとりに寄り添いながら、<br>
+              勉強を楽しく、前向きに進め<br>
+              られるようサポートします！
             </p>
           </li>
           <li class="p-about-teacher__item">
-            <picture class="p-about-teacher__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sample.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" width="235" height="235" alt="講師写真" loading="lazy">
-            </picture>
+            <figure class="p-about-teacher__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/teacher/teacher_img05.svg" width="235" height="235" alt="講師写真" loading="lazy">
+            </figure>
             <div class="p-about-teacher__item-head">
-              <span class="p-about-teacher__name">山下 紀美子</span>
-              <span class="p-about-teacher__faculty">医学科 3 年</span>
+              <span class="p-about-teacher__name">Y.S</span>
+              <span class="p-about-teacher__faculty">医学科 2年</span>
             </div>
             <p class="p-about-teacher__txt">
-              「わかる」から<br>
-              「できる」までを一緒に
-            </p>
-          </li>
-          <li class="p-about-teacher__item">
-            <picture class="p-about-teacher__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/sample.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sample.jpg" width="235" height="235" alt="講師写真" loading="lazy">
-            </picture>
-            <div class="p-about-teacher__item-head">
-              <span class="p-about-teacher__name">山下紀美子山下紀美子山下紀美子山下紀美子</span>
-              <span class="p-about-teacher__faculty">医学科 3 年 医学科 3 年 医学科 3 年</span>
-            </div>
-            <p class="p-about-teacher__txt">
-              「わかる」から<br>
-              「できる」までを一緒に<br>
-              大切にしていきましょう！大切にしていきましょう！大切にしていきましょう！大切にしていきましょう！
+              合格までの道のりを、<br>
+              全力でサポートします！
             </p>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="p-about-principal">
+      <div class="p-about-principal__inner">
+        <h2 class="p-about__sec-ttl">塾長紹介</h2>
+        <div class="p-about-principal__cont">
+          <div class="p-about-principal__cont-wrap">
+            <figure class="p-about-principal__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/principal/principal_img.svg" alt="佐和賢太郎" width="235" height="235">
+            </figure>
+            <div class="p-about-principal__txtblk">
+              <h3 class="p-about-principal__name">佐和 賢太郎</h3>
+              <p class="p-about-principal__txt">
+                早稲田大学教育学部英語英文学科卒<br>
+                早稲田大学政治学研究科博士後期課程修了<br>
+                <span class="p-about-principal__s-txt">(単位取得満期退学)</span>
+              </p>
+            </div>
+          </div>
+          <div class="p-about-principal__profile">
+            <h3 class="p-about-principal__profile-ttl">経歴</h3>
+            <p class="p-about-principal__profile-txt">
+              静岡県浜松市出身。<br>
+              河合塾KALS新宿校元講師、<br class="sp">四谷学院元講師。<br>
+              産業能率短期大学元非常勤講師。<br>
+              スプリング・オンライン家庭教師<br class="sp">共同創設者・講師。<br>
+              受験英語専門塾 松城ゼミナール <br class="sp">創設者・塾長兼講師。
+            </p>
+          </div>
+          <div class="p-about-principal__profile">
+            <h3 class="p-about-principal__profile-ttl">学歴</h3>
+            <p class="p-about-principal__profile-txt">
+              早稲田大学教育学部英語英文学科卒。<br>
+              早稲田大学政治学研究科博士後期課程修了(単位取得満期退学) <br>
+              大学院時代の専門：ドイツ現代史、国際政治史、<br>
+              国際関係論、国際政治学<br>
+              海外渡航歴　米国やドイツへの留学経験あり。<br><br>
+              TOEIC 980点<br>
+              駿台全国模試10位(英語)<br>
+              駿台成績優秀者の受賞歴あり。
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
