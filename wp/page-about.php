@@ -9,6 +9,19 @@ Template Name: 塾・講師紹介
     <section class="c-under-fv c-under-fv--about">
       <?php get_template_part( 'parts/nav' ); ?>
     </section>
+    
+    <section class="p-about-intro sp">
+      <div class="p-about__inner">
+        <p class="p-about-intro__txt">
+          元城アカデミーは、数学と英語を<br>
+          完全 1 対 1 で専⾨指導する塾です。<br>
+          浜松医科⼤学の現役⽣を中⼼とした講師陣が、<br>
+          ⼀⼈ひとりの理解の過程に向き合い、<br>
+          「なぜそうなるのか」を⼤切にした<br>
+          指導を⾏っています。
+        </p>
+      </div>
+    </section>
 
     <section class="p-about-philosophy">
       <div class="p-about__inner">
@@ -174,10 +187,11 @@ Template Name: 塾・講師紹介
       <div class="p-about__inner">
         <h2 class="p-about__sec-ttl">教室案内</h2>
         <p class="p-about__sec-txt">
-          教室は、浜松市中央区・布橋に位置し、姫街道沿いの通塾しやすい⽴地です。<br>
-          個別指導に集中できるよう、机の配置や動線にも配慮した設計とし、<br>
-          ⽣徒が落ち着いて考えられる空間を整えています。<br>
-          講師と 1 対 1 でじっくり向き合える、集中しやすい学習環境を⼤切にしています。
+          教室は浜松市中央区・布橋に位置し、姫街道沿いの通塾しやすい立地です。<br>
+          エントランスはセキュリティードアを採用しており、当塾に通う方以外は入室できない仕組みで、安心して学習に集中していただける環境づくりを徹底しています。<br>
+          塾内は、一見塾には見えないようなカフェのような落ち着いた雰囲気で、従来の事務的で無機質な塾のイメージを払拭しています。<br>
+          「通いたくなる空間」であることを大切にし、通塾や学習に対するモチベーションが自然と高まる環境を整えています。<br>
+          さらに、待機スペースもご用意しておりますので、学校・部活帰りや他塾の授業後など、授業開始までに時間がある場合は、早めに来て自習に取り組んでいただくことも可能です。
         </p>
         <div class="p-about-school__wrap">
           <picture class="p-about-school__img">
@@ -185,16 +199,16 @@ Template Name: 塾・講師紹介
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.jpg" width="428" height="428" alt="教室案内" loading="lazy">
           </picture>
           <picture class="p-about-school__img">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img02.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img02.jpg" width="428" height="428" alt="教室案内" loading="lazy">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.jpg" width="428" height="428" alt="教室案内" loading="lazy">
           </picture>
           <picture class="p-about-school__img">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img03.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img03.jpg" width="428" height="428" alt="教室案内" loading="lazy">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.jpg" width="428" height="428" alt="教室案内" loading="lazy">
           </picture>
           <picture class="p-about-school__img">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img04.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img04.jpg" width="428" height="428" alt="教室案内" loading="lazy">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/school/school_img01.jpg" width="428" height="428" alt="教室案内" loading="lazy">
           </picture>
         </div>
       </div>

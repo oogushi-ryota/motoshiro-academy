@@ -10,6 +10,17 @@ Template Name: 元アカコラム
       <?php get_template_part( 'parts/nav' ); ?>
     </section>
 
+    <section class="p-column-intro sp">
+      <div class="p-column-intro__inner">
+        <p class="p-column-intro__txt">
+          元アカコラムでは、<br>
+          元城アカデミーからのお知らせや、<br>
+          数学・英語の学習に関する話題を<br>
+          発信しています。
+        </p>
+      </div>
+    </section>
+
     <div class="p-column__obj">
       <section class="p-column-popular c-column">
         <div class="p-column__inner">

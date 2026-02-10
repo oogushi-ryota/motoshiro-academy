@@ -34,6 +34,7 @@
       @include sp {
         width: 100%;
         padding: 1.6rem 1.6rem 6rem;
+        gap: 0;
       }
     }
 
@@ -52,6 +53,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @include sp {
+        margin-top: 1rem;
+      }
     }
     
     &__name,
@@ -76,14 +81,11 @@
       color: color(wt,base);
       font-size: 1.6rem;
       line-height: calc(32/16);
-      // display: -webkit-inline-box;
-      // overflow: hidden;
-      // -webkit-line-clamp: 3;
-      // -webkit-box-orient: vertical;
 
       @include sp {
         font-size: 1.4rem;
         line-height: 150%;
+        margin-top: 1.6rem;
       }
     }
   }

@@ -4,7 +4,7 @@
       <a href="tel:0535434999" class="l-footer__head-tel">053-543-4999</a>
       <ul class="l-footer__head-list">
         <li class="l-footer__head-item">
-          <a href="" class="l-footer__head-link">メール</a>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="l-footer__head-link">メール</a>
         </li>
         <li class="l-footer__head-item">
           <a href="tel:0535434999" class="l-footer__head-link">お電話</a>
@@ -40,7 +40,7 @@
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-footer__logo">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="元城アカデミー" width="500" height="102">
             </a>
-            <address class="l-footer__address">〒430-0946 静岡県浜松市中央区元城町 215-6 出世横丁 2 号室</address>
+            <address class="l-footer__address">〒432-8012　静岡県浜松市中央区布橋1-7-8 ダイワビル1F</address>
             <span class="l-footer__copy">
               姉妹校：[松城ゼミナール（英語専門塾）](<a href="https://matsushiro-seminar.jp" class="l-footer__copy-link" target="_blank">https://matsushiro-seminar.jp</a>)<br>
               © 2025 元城アカデミー（Motoshiro Academy）All Rights Reserved.

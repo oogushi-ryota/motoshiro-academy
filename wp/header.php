@@ -42,7 +42,7 @@
           <nav class="l-header__nav">
             <ul class="l-header__nav-list">
               <li class="l-header__nav-item">
-                <a href="" class="l-header__nav-link">メール</a>
+                <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="l-header__nav-link">メール</a>
               </li>
               <li class="l-header__nav-item">
                 <a href="tel:0535434999" class="l-header__nav-link">お電話</a>

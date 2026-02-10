@@ -16,6 +16,34 @@
       padding: 0 2rem;
     }
 
+    &__txtarea {
+      @include sp {
+        margin-top: 2rem;
+      }
+    }
+
+    &__txt {
+      @include sp {
+        color: color(blu,base);
+        font-size: 1.4rem;
+        line-height: calc(20/14);
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2.4rem;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 1.2rem;
+          height: 7.2rem;
+          background-image: url(../img/course/intro/obj.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
     &__wrap {
       display: grid;
       grid-template-columns: repeat(3,1fr);
@@ -28,7 +56,7 @@
         flex-wrap: wrap;
         gap: 0 2rem;
         width: 27rem;
-        margin: 0 auto;
+        margin: 2rem auto 0;
       }
     }
 

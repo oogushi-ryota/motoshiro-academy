@@ -21,7 +21,8 @@
       left: 0;
 
       @include sp {
-        content: unset;
+        height: .2rem;
+        bottom: .4rem;
       }
     }
 

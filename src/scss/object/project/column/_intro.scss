@@ -1,0 +1,39 @@
+@use "./global/variables" as *;
+@use "./global/mixins" as *;
+@use "./global/color" as *;
+
+.p-column-intro {
+  & {
+    @include sp {
+      margin-top: 2rem;
+    }
+
+    &__inner {
+      @include sp {
+        padding: 0 2rem;
+      }
+    }
+
+    &__txt {
+      @include sp {
+        color: color(blu,base);
+        font-size: 1.4rem;
+        line-height: calc(20/14);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2.4rem;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 1.2rem;
+          height: 7.2rem;
+          background-image: url(../img/column/intro/obj.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

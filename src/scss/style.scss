@@ -35,6 +35,7 @@
 @use "object/project/about/teacher" as *;
 @use "object/project/about/school" as *;
 @use "object/project/about/principal" as *;
+@use "object/project/about/intro" as *;
 
 // コース・料金
 @use "object/project/course/intro" as *;
@@ -46,6 +47,7 @@
 @use "object/project/contact/faq" as *;
 
 // 元アカコラム
+@use "object/project/column/intro" as *;
 @use "object/project/column/column" as *;
 @use "object/project/column/popular" as *;
 @use "object/project/column/new" as *;

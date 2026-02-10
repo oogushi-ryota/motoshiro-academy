@@ -12,6 +12,14 @@ Template Name: コース・料金
 
     <section class="p-course-intro">
       <div class="p-course-intro__inner">
+        <div class="p-course-intro__txtarea sp">
+          <p class="p-course-intro__txt">
+            元城アカデミーでは、<br>
+            数学・英語を完全 1 対 1 で指導しています。<br>
+            学年や目的に応じて、<br>
+            最適な学習内容をご提案します。
+          </p>
+        </div>
         <div class="p-course-intro__wrap">
           <div class="p-course-intro__cont">
             <figure class="p-course-intro__img">
@@ -95,7 +103,7 @@ Template Name: コース・料金
               <h4 class="p-course-menu__cont-ttl">目標校</h4>
               <p class="p-course-menu__cont-txt">
                 浜松北／浜松西／浜松市立／浜松南／浜松日体／浜松学芸 などの地域上位校、<br>
-                および 全国の難関私立・附属高校（愛知・関西・関東エリアを含む） を想定対象。
+                および 全国の難関高校（愛知・関西・関東エリアを含む） を想定対象。
               </p>
             </div>
           </div>
