@@ -9,5 +9,19 @@
     @include sp {
       padding-top: 5.6rem;
     }
+
+    .wpp-no-data {
+      color: $base-font-color;
+      font-size: 1.8rem;
+      text-align: center;
+      line-height: calc(26/18);
+      margin-top: 7.2rem;
+      width: 100%;
+
+      @include sp {
+        font-size: 1.4rem;
+        margin-top: 4.8rem;
+      }
+    }
   }
 }
